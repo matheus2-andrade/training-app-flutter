@@ -49,6 +49,32 @@ class _HomePageState extends State<HomePage> {
                   color: color.AppColor.homePageIcons,
                 )
               ],
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            Row(
+              children: [
+                Text(
+                  "Seu programa",
+                  style: TextStyle(
+                      fontSize: 20,
+                      color: color.AppColor.homePageSubtitle,
+                      fontWeight: FontWeight.w700),
+                ),
+                Spacer(),
+                Text(
+                  "Detalhes",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: color.AppColor.homePageDetail,
+                  ),
+                ),
+                SizedBox(width: 5,),
+                Icon(Icons.arrow_forward,
+                size: 20,
+                color: color.AppColor.homePageIcons ,)
+              ],
             )
           ],
         ),
