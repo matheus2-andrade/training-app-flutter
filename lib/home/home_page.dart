@@ -257,6 +257,66 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
+            Row(
+              children: [
+                Text(
+                  "Área de foco",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.w500,
+                      color: color.AppColor.homePageTitle),
+                ),
+              ],
+            ),
+            Expanded(
+              child: ListView.builder(
+                itemCount: 4,
+                itemBuilder: (_, i) {
+                  return Row(
+                    children: [
+                      Container(
+                        padding: EdgeInsets.only(bottom: 5),
+                        width: 200,
+                        height: 170,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(15),
+                          image: DecorationImage(
+                            image: AssetImage("assets/ex1.png"),
+                          ),
+                          boxShadow: [
+                            BoxShadow(
+                              blurRadius: 3,
+                              offset: Offset(5, 5),
+                              color: color.AppColor.gradientSecond
+                                  .withOpacity(0.1),
+                            ),
+                            BoxShadow(
+                              blurRadius: 3,
+                              offset: Offset(-5, -5),
+                              color: color.AppColor.gradientSecond
+                                  .withOpacity(0.1),
+                            ),
+                          ],
+                        ),
+                        child: Center(
+                          child: Align(
+                            alignment: Alignment.bottomCenter,
+                            child: Text(
+                              "glúteos",
+                              style: TextStyle(
+                                  fontSize: 20,
+                                  color: color.AppColor.homePageDetail),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  );
+                },
+              ),
+            ),
           ],
         ),
       ),
