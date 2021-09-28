@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:training_app/training_screen/train_screen.dart';
 import 'home/home_page.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: TrainScreen(),
     );
   }
 }
