@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:training_app/training_screen/train_screen.dart';
 import '/colors.dart' as color;
 
 class SecondBar extends StatelessWidget {
@@ -28,10 +30,15 @@ class SecondBar extends StatelessWidget {
         SizedBox(
           width: 5,
         ),
-        Icon(
-          Icons.arrow_forward,
-          size: 20,
-          color: color.AppColor.homePageIcons,
+        InkWell(
+          onTap: () {
+            Get.to(() => TrainScreen());
+          },
+          child: Icon(
+            Icons.arrow_forward,
+            size: 20,
+            color: color.AppColor.homePageIcons,
+          ),
         )
       ],
     );
